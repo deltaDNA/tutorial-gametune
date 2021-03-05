@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.DeltaDNA.SDK", "Unity.DeltaDNA.SDK.csproj", "{BACE8F6B-5FA2-2E4B-A6C8-1D730CDEFCBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{BC631922-4B21-22F5-61F1-669D3D52DFA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.DeltaDNA.SDK.Editor", "Unity.DeltaDNA.SDK.Editor.csproj", "{0CF5EE9A-E0AD-3AA4-D325-944B52348A6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEditor.GameTune", "UnityEditor.GameTune.csproj", "{2191CCF5-6772-3652-EFBB-664DDF69D84F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BACE8F6B-5FA2-2E4B-A6C8-1D730CDEFCBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BACE8F6B-5FA2-2E4B-A6C8-1D730CDEFCBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BACE8F6B-5FA2-2E4B-A6C8-1D730CDEFCBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BACE8F6B-5FA2-2E4B-A6C8-1D730CDEFCBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC631922-4B21-22F5-61F1-669D3D52DFA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC631922-4B21-22F5-61F1-669D3D52DFA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC631922-4B21-22F5-61F1-669D3D52DFA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC631922-4B21-22F5-61F1-669D3D52DFA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CF5EE9A-E0AD-3AA4-D325-944B52348A6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CF5EE9A-E0AD-3AA4-D325-944B52348A6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CF5EE9A-E0AD-3AA4-D325-944B52348A6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CF5EE9A-E0AD-3AA4-D325-944B52348A6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2191CCF5-6772-3652-EFBB-664DDF69D84F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2191CCF5-6772-3652-EFBB-664DDF69D84F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2191CCF5-6772-3652-EFBB-664DDF69D84F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2191CCF5-6772-3652-EFBB-664DDF69D84F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

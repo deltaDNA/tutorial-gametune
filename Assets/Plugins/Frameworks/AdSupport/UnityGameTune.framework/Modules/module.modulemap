@@ -1,0 +1,18 @@
+framework module UnityGameTune {
+  umbrella header "UnityGameTune.h"
+
+  header "UGTAlternative.h"
+  header "UGTAnswer.h"
+  header "UGTJsonStorage.h"
+  header "UGTMetaData.h"
+  header "UGTQuestion.h"
+  header "UGTInitializeOptions.h"
+  header "UGTEventListener.h"
+  header "UGTAppStartEvent.h"
+  header "UGTUseEvent.h"
+  header "UGTRewardEvent.h"
+  header "UGTQuestionEvent.h"
+
+  export *
+  module * { export * }
+}
