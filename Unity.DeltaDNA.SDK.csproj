@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{BACE8F6B-5FA2-2E4B-A6C8-1D730CDEFCBC}</ProjectGuid>
+    <ProjectGuid>{F6AAC42F-1DF1-CDF4-2FA9-48055E4D999E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.DeltaDNA.SDK</AssemblyName>
@@ -56,50 +56,50 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\DeltaDNA\Runtime\Helpers\ActionStore.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\Helpers\EngageCache.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\AssemblyInfo.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\DDNANonTracking.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\EngageFactory.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\Notifications\AndroidNotifications.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\AudiencePinpointer.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\Platforms\Android\Utils.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\Helpers\Platform.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\Triggers\EventAction.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\DDNA.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\Helpers\Singleton.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\Helpers\APIConfiguration.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\Notifications\IosNotifications.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\Helpers\Utils.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\Helpers\ClientInfo.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\Helpers\Engage.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\DDNABase.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\Product.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\Triggers\Conditions\TriggerConditionParser.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\Transaction.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\Triggers\Conditions\ExecutionCountBasedTriggerCondition.cs" />
     <Compile Include="Assets\DeltaDNA\Runtime\Helpers\EventStore.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\Helpers\SimpleDataStore.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\Triggers\EventActionHandlers.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\Triggers\Conditions\ExecutionCountTriggerCondition.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\Helpers\ImageMessageStore.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\Triggers\EventTrigger.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\Messaging\ImageMessage.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\GameEvent.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\Libraries\MiniJSON.cs" />
     <Compile Include="Assets\DeltaDNA\Runtime\Helpers\Network.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\Helpers\Configuration.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\Triggers\ExecutionCountManager.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\AudiencePinpointer.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\DDNABase.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\DDNA.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\Libraries\MiniJSON.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\Product.cs" />
     <Compile Include="Assets\DeltaDNA\Runtime\DDNAImpl.cs" />
     <Compile Include="Assets\DeltaDNA\Runtime\Helpers\Logger.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\Engagement.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\Helpers\Settings.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\Helpers\Platform.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\Helpers\ImageMessageStore.cs" />
     <Compile Include="Assets\DeltaDNA\Runtime\Platforms\Android\DdnaNotifications.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\Params.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\Helpers\ConcurrentQueue.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\Triggers\Conditions\ExecutionCountTriggerCondition.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\Messaging\ImageMessage.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\GameEvent.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\Helpers\ActionStore.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\Helpers\Singleton.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\Helpers\Configuration.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\AssemblyInfo.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\Triggers\Conditions\TriggerConditionParser.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\Helpers\SimpleDataStore.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\Triggers\EventTrigger.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\Helpers\APIConfiguration.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\Helpers\Settings.cs" />
     <Compile Include="Assets\DeltaDNA\Runtime\Triggers\Conditions\ExecutionRepeatTriggerCondition.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\Helpers\EngageCache.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\DDNANonTracking.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\Platforms\Android\Utils.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\Triggers\EventActionHandlers.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\Triggers\EventAction.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\Helpers\ClientInfo.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\Transaction.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\Helpers\ConcurrentQueue.cs" />
     <Compile Include="Assets\DeltaDNA\Runtime\Triggers\Conditions\TriggerCondition.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\Notifications\AndroidNotifications.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\Helpers\Utils.cs" />
     <Compile Include="Assets\DeltaDNA\Runtime\Helpers\OrientationChange.cs" />
-    <Compile Include="Assets\DeltaDNA\Runtime\Triggers\ExecutionCountManager.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\Notifications\IosNotifications.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\Params.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\Helpers\Engage.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\EngageFactory.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\Triggers\Conditions\ExecutionCountBasedTriggerCondition.cs" />
+    <Compile Include="Assets\DeltaDNA\Runtime\Engagement.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\DeltaDNA\Runtime\Unity.DeltaDNA.SDK.asmdef" />
@@ -343,20 +343,20 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="Google.VersionHandler">
-      <HintPath>Assets\DeltaDNA\Editor\PlayServicesResolver\Google.VersionHandler.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.JarResolver_v1.2.136.0">
-      <HintPath>Assets\DeltaDNA\Editor\PlayServicesResolver\Google.JarResolver_v1.2.136.0.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.VersionHandlerImpl_v1.2.136.0">
-      <HintPath>Assets\DeltaDNA\Editor\PlayServicesResolver\Google.VersionHandlerImpl_v1.2.136.0.dll</HintPath>
+    <Reference Include="UnityEngine.GameTune.Editor">
+      <HintPath>Assets\UnityGameTune\UnityEngine.GameTune.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Google.IOSResolver_v1.2.136.0">
       <HintPath>Assets\DeltaDNA\Editor\PlayServicesResolver\Google.IOSResolver_v1.2.136.0.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.GameTune.Editor">
-      <HintPath>Assets\UnityGameTune\UnityEngine.GameTune.Editor.dll</HintPath>
+    <Reference Include="Google.VersionHandler">
+      <HintPath>Assets\DeltaDNA\Editor\PlayServicesResolver\Google.VersionHandler.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.VersionHandlerImpl_v1.2.136.0">
+      <HintPath>Assets\DeltaDNA\Editor\PlayServicesResolver\Google.VersionHandlerImpl_v1.2.136.0.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.JarResolver_v1.2.136.0">
+      <HintPath>Assets\DeltaDNA\Editor\PlayServicesResolver\Google.JarResolver_v1.2.136.0.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.2.2f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>

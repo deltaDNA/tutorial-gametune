@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using DeltaDNA;
 using UnityEngine.GameTune;
+using UnityEngine.UI;
 
 public class DeltaDNAManager : MonoBehaviour
 {
+    public InputField missionIDInput;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,18 +26,30 @@ public class DeltaDNAManager : MonoBehaviour
             DDNA.Instance.StartSDK();
         }
     }
-	
+
     //Clicking this button will record a missionCompleted event
     //This may trigger a campaign
     public void onMissionCompletedClick()
     {
         // Create a missionCompleted event object
-        GameEvent missionCompEvent = new GameEvent("missionCompleted")
-            .AddParam("missionID", 3)
-            .AddParam("missionName", "Chapter 1 Mission 3")
-            .AddParam("isTutorial", false)
-            .AddParam("userLevel", 5)
-            .AddParam("userXP", 50);
+        GameEvent missionCompEvent;
+
+        //if there is not input in the text box, set the missionID parameter to a default 3
+        if (string.IsNullOrEmpty(missionIDInput.text)) { 
+            missionCompEvent = new GameEvent("missionCompleted")
+                                .AddParam("missionID", 3)
+                                .AddParam("isTutorial", false)
+                                .AddParam("userLevel", 5)
+                                .AddParam("userXP", 50);
+        } else
+        {
+        missionCompEvent = new GameEvent("missionCompleted")
+                            .AddParam("missionID", missionIDInput.text)
+                            .AddParam("isTutorial", false)
+                            .AddParam("userLevel", 5)
+                            .AddParam("userXP", 50);
+        }
+
         //Record missionCompleted event and wire up handler callbacks
         DDNA.Instance.RecordEvent(missionCompEvent).Run();
     }

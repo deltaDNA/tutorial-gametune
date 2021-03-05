@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{2191CCF5-6772-3652-EFBB-664DDF69D84F}</ProjectGuid>
+    <ProjectGuid>{BDD103EB-0A39-301E-0AD8-EA80F69301E8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>UnityEditor.GameTune</AssemblyName>
@@ -298,20 +298,20 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="Google.VersionHandler">
-      <HintPath>Assets\DeltaDNA\Editor\PlayServicesResolver\Google.VersionHandler.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.JarResolver_v1.2.136.0">
-      <HintPath>Assets\DeltaDNA\Editor\PlayServicesResolver\Google.JarResolver_v1.2.136.0.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.VersionHandlerImpl_v1.2.136.0">
-      <HintPath>Assets\DeltaDNA\Editor\PlayServicesResolver\Google.VersionHandlerImpl_v1.2.136.0.dll</HintPath>
+    <Reference Include="UnityEngine.GameTune.Editor">
+      <HintPath>Assets\UnityGameTune\UnityEngine.GameTune.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Google.IOSResolver_v1.2.136.0">
       <HintPath>Assets\DeltaDNA\Editor\PlayServicesResolver\Google.IOSResolver_v1.2.136.0.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.GameTune.Editor">
-      <HintPath>Assets\UnityGameTune\UnityEngine.GameTune.Editor.dll</HintPath>
+    <Reference Include="Google.VersionHandler">
+      <HintPath>Assets\DeltaDNA\Editor\PlayServicesResolver\Google.VersionHandler.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.VersionHandlerImpl_v1.2.136.0">
+      <HintPath>Assets\DeltaDNA\Editor\PlayServicesResolver\Google.VersionHandlerImpl_v1.2.136.0.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.JarResolver_v1.2.136.0">
+      <HintPath>Assets\DeltaDNA\Editor\PlayServicesResolver\Google.JarResolver_v1.2.136.0.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>

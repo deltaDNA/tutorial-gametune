@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{BC631922-4B21-22F5-61F1-669D3D52DFA0}</ProjectGuid>
+    <ProjectGuid>{A5B2EEAD-2E66-1F78-6246-D2BD65E0CF2F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,8 +56,8 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\DeltaDNAManager.cs" />
     <Compile Include="Assets\Scripts\GameTuneManager.cs" />
+    <Compile Include="Assets\Scripts\DeltaDNAManager.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\UnityGameTune\UnityEngine.GameTune.Android.dll" />
@@ -675,14 +675,14 @@
     <Reference Include="Unity.2D.Path.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Path.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.InternalAPIEditorBridge.001">
-      <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEditorBridge.001">
+      <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
@@ -723,16 +723,16 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.DeltaDNA.SDK.csproj">
-      <Project>{BACE8F6B-5FA2-2E4B-A6C8-1D730CDEFCBC}</Project>
+      <Project>{F6AAC42F-1DF1-CDF4-2FA9-48055E4D999E}</Project>
       <Name>Unity.DeltaDNA.SDK</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.DeltaDNA.SDK.Editor.csproj">
-      <Project>{0CF5EE9A-E0AD-3AA4-D325-944B52348A6C}</Project>
-      <Name>Unity.DeltaDNA.SDK.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEditor.GameTune.csproj">
-      <Project>{2191CCF5-6772-3652-EFBB-664DDF69D84F}</Project>
+      <Project>{BDD103EB-0A39-301E-0AD8-EA80F69301E8}</Project>
       <Name>UnityEditor.GameTune</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.DeltaDNA.SDK.Editor.csproj">
+      <Project>{4D8D09C7-0FC2-2D05-7390-E89C557143CA}</Project>
+      <Name>Unity.DeltaDNA.SDK.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
