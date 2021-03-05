@@ -33,7 +33,7 @@ Don't forget to save the event and publish it to your LIVE environment, so that 
 
 ### Create a GameTune question and ask it
 
-On your GameTune dashboard, create the question that you wish to analyze by selecting your optimization target and choosing your alternatives. For this example I have created a question which decides how quickly the difficulty of the game will increase for the player.
+On your GameTune dashboard, create the question that you wish to analyze by selecting your optimization target and choosing your alternatives. For this example, a question which decides how quickly the difficulty of the game will increase for the player has been created.
 
 In your code, create the Question object and ask GameTune the question.
 
@@ -80,7 +80,11 @@ If you wish to compare your varients on the same graph or in the same dashboard,
 
 ## Using DeltaDNA engagement tools to ask GameTune questions
 
+In order to improve the choices made by the machine learning, you can set user attributes to be sent to the platform with a question. By using campaigns and actions, you can collect metrics from the DeltaDNA platform and set them as your user parameters.
+
 ### Create an Action
+
+
 
 ### Create an Event Triggered Campaign
 
