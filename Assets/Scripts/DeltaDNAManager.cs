@@ -55,6 +55,13 @@ public class DeltaDNAManager : MonoBehaviour
     }
     private void ParameterHandler(Dictionary<string, object> gameParameters)
     {
+        Dictionary<string, object> userAttributes = new Dictionary<string, object>()
+        {
+            {"lastMission", gameParameters["missionName"]}
+        };
+
+        GameTune.SetUserAttributes(userAttributes);
+
         // Create a GameTune question to ask if the user should get a low, medium or high promotion offer
         Question iapQuestion = GameTune.CreateQuestion(
             "iap_offer",
@@ -66,3 +73,5 @@ public class DeltaDNAManager : MonoBehaviour
         GameTune.AskQuestions(iapQuestion);
     }
 }
+
+

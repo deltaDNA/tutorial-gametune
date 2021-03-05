@@ -17,6 +17,8 @@ This tutorial provides a couple of example scenarios to provide you with some id
 [Full DeltaDNA documentation](https://docs.deltadna.com/) \
 [Full GameTune documentation](https://docs.gametune.unity3d.com)
 
+GameTune also provides an [Event Listener](https://docs.gametune.unity3d.com/#analytics) to which provides details of certain GameTune events which can be used to send details to DeltaDNA for analytics.
+
 ## Analyzing GameTune answers with DeltaDNA
 
 ### Create a DeltaDNA event
@@ -70,7 +72,7 @@ Navigate to **ENGAGE** > **SEGMENTATION** > **Manage Segments**. From here you c
 
 ![EventSegment](Images/event-segment-of-gametune-answer.png)
 
-*insert image of Measure - Summary dashboard using the event segment with generated data from data pump*
+[insert image of Measure - Summary dashboard using the event segment with generated data from data pump]
 
 If you wish to compare your varients on the same graph or in the same dashboard, you can use our analyze tools to build your own queries.
 

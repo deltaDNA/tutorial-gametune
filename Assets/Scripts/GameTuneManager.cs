@@ -82,7 +82,6 @@ public class GameTuneManager : MonoBehaviour
         //Create a game event to send the answer to DeltaDNA
         GameEvent gtAnswerUsedEvent;
 
-
         //Model name and model version only exist if the treatment group is "ml"
         if (answer.TreatmentGroup == "ml")
         {

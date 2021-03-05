@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\GameTuneManager.cs" />
     <Compile Include="Assets\Scripts\DeltaDNAManager.cs" />
+    <Compile Include="Assets\Scripts\UserAttributeProvider.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\UnityGameTune\UnityEngine.GameTune.Android.dll" />
