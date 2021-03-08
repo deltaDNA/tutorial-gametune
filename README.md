@@ -72,11 +72,11 @@ Navigate to **ENGAGE** > **SEGMENTATION** > **Manage Segments**. From here you c
 
 ![EventSegment](Images/event-segment-of-gametune-answer.png)
 
-[insert image of Measure - Summary dashboard using the event segment with generated data from data pump]
+[*insert image of Measure - Summary dashboard using the event segment with generated data from data pump*]
 
 If you wish to compare your varients on the same graph or in the same dashboard, you can use our analyze tools to build your own queries.
 
-*See [Example Queries](AnalysisExampleQueries.md) for queries I wish to use for the analysis. Will need generated data from the data pump to demonstrate*
+[*See [Example Queries](AnalysisExampleQueries.md) for queries I wish to use for the analysis. Will need generated data from the data pump to demonstrate*]
 
 ## Using DeltaDNA engagement tools to ask GameTune questions
 
@@ -84,7 +84,18 @@ In order to improve the choices made by the machine learning, you can set user a
 
 ### Create an Action
 
+To send parameters to the game client, it will be necessary to use a Game Parameter action. The parameters sent can have custom values created by you or metrics generated from the data you have sent in to the DeltaDNA platform.
 
+To create a Game Parameter action:
+
+1. Navigate to **Engage** > **Actions**
+2. Click the create button under the **Game Parameter** category
+3. Name you action
+4. Add the parameters you wish to send with the action - you can send either a static parameter or a metric.
+5. Save your action
+
+In this example, the last mission completed is sent in order to give an idea of player progression in the game.
+![ActionMetricParam](Images/action-parameter-metric-value.png)
 
 ### Create an Event Triggered Campaign
 

@@ -55,11 +55,13 @@ public class DeltaDNAManager : MonoBehaviour
     }
     private void ParameterHandler(Dictionary<string, object> gameParameters)
     {
+        //Use the game parameters received from DeltaDNA as a userAttribute to send to GameTune
         Dictionary<string, object> userAttributes = new Dictionary<string, object>()
         {
             {"lastMission", gameParameters["missionName"]}
         };
 
+        //Set the userAttributes so that they are sent with the next question
         GameTune.SetUserAttributes(userAttributes);
 
         // Create a GameTune question to ask if the user should get a low, medium or high promotion offer
