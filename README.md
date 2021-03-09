@@ -95,8 +95,65 @@ To create a Game Parameter action:
 5. Save your action
 
 In this example, the last mission completed is sent in order to give an idea of player progression in the game.
+
 ![ActionMetricParam](Images/action-parameter-metric-value.png)
 
 ### Create an Event Triggered Campaign
 
+In order to send the action that has just been created to the client, it is necessary to create a campaign. For this example, an event triggered campaign has been created on the mission failed event and will be triggered on every third mission failed.
+
+To create this event triggered campaign:
+
+1. Navigate to ENGAGE > Event-Trigged Campaigns
+2. Click on Create Campaign
+3. Name your campaign and give it a description
+4. Set your campaign to start now and to run indefinitely \
+![ETCDetails](Images/ETC-details-page.png)
+5. Set the target segment to cover all players \
+![ETCPlayer](Images/ETC-players-page.png)
+6. Set the trigger to the missionFailed event \
+![ETCTrigger](Images/ETC-trigger-page.png)
+7. Set the action to be sent as the action which was created before and set the campaign to only trigger on every third missionFailed event \
+![ETCAction](Images/ETC-action-page.png)
+8. Set the conversion event to the gameTuneAnswerUsed event in order to convert the player out of the campaign once they have had their varient assigned \
+![ETCConversion](Images/ETC-confirmation-page.png)
+9. Check all of the details for the campaign are correct and finally click on the publish button to publish your campaign \
+![ECTConfirmation](Images/ETC-confirmation-page.png)
+
 ### Ask question using the campaign
+
+Now that an action and a campaign has been set up, in your code you can handle the action and ask GameTune a question using the parameters you received from the action.
+
+Declare a parameter handler in your code:
+
+```csharp
+DDNA.Instance.Settings.DefaultGameParameterHandler = new GameParametersHandler(gameParameters => {
+            ParameterHandler(gameParameters);
+        });
+```
+
+In the parameter handler, set the User Attributes for your GameTune question using the game parameters sent by the action. Finally, ask GameTune your question.
+
+```csharp
+private void ParameterHandler(Dictionary<string, object> gameParameters)
+    {
+        //Use the game parameters received from DeltaDNA as a userAttribute to send to GameTune
+        Dictionary<string, object> userAttributes = new Dictionary<string, object>()
+        {
+            {"lastMission", gameParameters["missionName"]}
+        };
+
+        //Set the userAttributes so that they are sent with the next question
+        GameTune.SetUserAttributes(userAttributes);
+
+        // Create a GameTune question to ask if the user should get a low, medium or high promotion offer
+        Question iapQuestion = GameTune.CreateQuestion(
+            "iap_offer",
+            new string[] { "medium", "high", "low" },
+            GameTuneManager.IAPOfferHandler
+        );
+
+        //Ask the GameTune question
+        GameTune.AskQuestions(iapQuestion);
+    }
+```

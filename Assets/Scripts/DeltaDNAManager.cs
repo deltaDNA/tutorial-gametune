@@ -27,23 +27,23 @@ public class DeltaDNAManager : MonoBehaviour
         }
     }
 
-    //Clicking this button will record a missionCompleted event
+    //Clicking this button will record a missionFailed event
     //This may trigger a campaign
-    public void onMissionCompletedClick()
+    public void onMissionFailedClick()
     {
         // Create a missionCompleted event object
-        GameEvent missionCompEvent;
+        GameEvent missionFailEvent;
 
         //if there is not input in the text box, set the missionID parameter to a default 3
         if (string.IsNullOrEmpty(missionIDInput.text)) { 
-            missionCompEvent = new GameEvent("missionCompleted")
+            missionFailEvent = new GameEvent("missionFailed")
                                 .AddParam("missionID", 3)
                                 .AddParam("isTutorial", false)
                                 .AddParam("userLevel", 5)
                                 .AddParam("userXP", 50);
         } else
         {
-        missionCompEvent = new GameEvent("missionCompleted")
+        missionFailEvent = new GameEvent("missionFailed")
                             .AddParam("missionID", missionIDInput.text)
                             .AddParam("isTutorial", false)
                             .AddParam("userLevel", 5)
@@ -51,7 +51,7 @@ public class DeltaDNAManager : MonoBehaviour
         }
 
         //Record missionCompleted event and wire up handler callbacks
-        DDNA.Instance.RecordEvent(missionCompEvent).Run();
+        DDNA.Instance.RecordEvent(missionFailEvent).Run();
     }
     private void ParameterHandler(Dictionary<string, object> gameParameters)
     {

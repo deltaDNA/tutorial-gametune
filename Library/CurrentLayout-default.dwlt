@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1926
     height: 997
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Inspector
   m_RootView: {fileID: 10}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_MinSize: {x: 231, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 125
+  controlID: 148
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 342}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 89
+  controlID: 51
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -174,7 +174,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 124
+  controlID: 50
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -321,8 +321,8 @@ MonoBehaviour:
     y: 0
     width: 958
     height: 539
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 18}
@@ -405,8 +405,8 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 12410000
-    m_LastClickedID: 16658
+    m_SelectedIDs: 0e410000
+    m_LastClickedID: 16654
     m_ExpandedIDs: 00000000fe400000004100000241000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -462,7 +462,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000f841000084440000163a0000123a0000a63c000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -556,9 +556,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: a8120000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 44fbffff
+      m_SelectedIDs: 8a400000
+      m_LastClickedID: 16522
+      m_ExpandedIDs: 44fbffffaa400000ba400000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -754,7 +754,7 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
-    m_VSlider: 0
+    m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -767,7 +767,7 @@ MonoBehaviour:
       y: 21
       width: 956
       height: 497
-    m_Scale: {x: 0.38828126, y: 0.38828126}
+    m_Scale: {x: 0.4046875, y: 0.4046875}
     m_Translation: {x: 478, y: 248.5}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -775,12 +775,12 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -1231.0664
-      y: -640
-      width: 2462.1328
-      height: 1280
+      x: -1181.1583
+      y: -614.0541
+      width: 2362.3167
+      height: 1228.1082
     m_MinimalGUI: 1
-  m_defaultScale: 0.38828126
+  m_defaultScale: 0.4046875
   m_LastWindowPixelSize: {x: 956, y: 518}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
