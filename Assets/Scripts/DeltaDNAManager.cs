@@ -52,6 +52,8 @@ public class DeltaDNAManager : MonoBehaviour
 
         //Record missionCompleted event and wire up handler callbacks
         DDNA.Instance.RecordEvent(missionFailEvent).Run();
+
+        GameTune.RewardEvent("reward");
     }
     private void ParameterHandler(Dictionary<string, object> gameParameters)
     {

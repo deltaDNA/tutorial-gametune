@@ -22,8 +22,8 @@ public class GameTuneManager : MonoBehaviour
 
         // Create a GameTune question to ask if the user should get a low, medium or high difficulty ramp up
         Question difficultyQuestion = GameTune.CreateQuestion(
-            "difficulty_ramp",
-            new string[] { "medium", "high", "low" },
+            "test_q",
+            new string[] { "middle", "up", "down" },
             DifficultyRampHandler
         );
 
@@ -44,7 +44,6 @@ public class GameTuneManager : MonoBehaviour
                 .AddParam("gtAnswerID", answer.Id)
                 .AddParam("gtAnswerTreatmentGroup", answer.TreatmentGroup)
                 .AddParam("gtAnswerValue", answer.Value)
-                .AddParam("gtModelName", answer.ModelName)
                 .AddParam("gtModelVersion", answer.ModelVersion);
         }
         else
@@ -59,11 +58,11 @@ public class GameTuneManager : MonoBehaviour
         DDNA.Instance.RecordEvent(gtAnswerUsedEvent);
 
         //Handle different answer values
-        if (answer.Value == "low")
+        if (answer.Value == "down")
         {
             Debug.Log("Difficulty ramp is SLOW");
         }
-        else if (answer.Value == "medium")
+        else if (answer.Value == "middle")
         {
             Debug.Log("Difficulty ramp is NORMAL");
         }
@@ -89,7 +88,7 @@ public class GameTuneManager : MonoBehaviour
                 .AddParam("gtAnswerID", answer.Id)
                 .AddParam("gtAnswerTreatmentGroup", answer.TreatmentGroup)
                 .AddParam("gtAnswerValue", answer.Value)
-                .AddParam("gtModelName", answer.ModelName)
+               
                 .AddParam("gtModelVersion", answer.ModelVersion);
         }
         else

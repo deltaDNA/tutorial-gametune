@@ -72,11 +72,11 @@ Navigate to **ENGAGE** > **SEGMENTATION** > **Manage Segments**. From here you c
 
 ![EventSegment](Images/event-segment-of-gametune-answer.png)
 
-[*insert image of Measure - Summary dashboard using the event segment with generated data from data pump*]
-
 If you wish to compare your varients on the same graph or in the same dashboard, you can use our analyze tools to build your own queries.
 
-[*See [Example Queries](AnalysisExampleQueries.md) for queries I wish to use for the analysis. Will need generated data from the data pump to demonstrate*]
+![GTGraphs](Images/GT-analysis-graphs.png)
+
+The queries used for these graphs can be found in the [example query file](AnalysisExampleQueries.md).
 
 ## Using DeltaDNA engagement tools to ask GameTune questions
 

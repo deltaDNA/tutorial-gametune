@@ -1,6 +1,6 @@
 # Example Queries
 
-Funnels for mission progression will also be created
+## GT - Treatment Group Distribution
 
 ```sql
 SELECT GTANSWERTREATMENTGROUP, COUNT(DISTINCT USERID)
@@ -10,6 +10,8 @@ AND GTANSWERNAME = 'difficulty_ramp'
 GROUP BY GTANSWERTREATMENTGROUP
 ```
 
+## GT - Answer Distribution
+
 ```sql
 SELECT GTANSWERVALUE, COUNT(DISTINCT USERID)
 FROM EVENTS
@@ -18,20 +20,19 @@ AND GTANSWERNAME = 'difficulty_ramp'
 GROUP BY GTANSWERVALUE
 ```
 
-Pivot this table for visualisation:
+## GT - Answer Distribution per Day
 
 ```sql
-SELECT EVENT_DATE,
-        GTANSWERVALUE,
-        COUNT(DISTINCT USER_ID) AS DAU
-FROM FACT_USER_SESSIONS_DAY
+SELECT EVENTDATE, GTANSWERVALUE,
+        COUNT(DISTINCT USERID) AS DAU
+FROM EVENTS
 WHERE EVENTNAME = 'gameTuneAnswerUsed'
 AND GTANSWERNAME = 'difficulty_ramp'
-GROUP BY EVENT_DATE, GTANSWERVALUE
-ORDER BY EVENT_DATE
+GROUP BY EVENTDATE, GTANSWERVALUE
+ORDER BY EVENTDATE
 ```
 
-Will need to test this following one works
+## GT - New Player Retention % per Answer Variant
 
 ```sql
 WITH FIRST_PASS AS

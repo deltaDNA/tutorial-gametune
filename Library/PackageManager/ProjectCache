@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637502964278762417
-    m_Hash: 3617124489
+      ticks: 637511424136816528
+    m_Hash: 4016926564
   m_LockFileStatus:
     m_FilePath: C:/Users/Ellie Fowler/Documents/DDNA GT Tutorial/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637505459048425074
-    m_Hash: 3228591515
+      ticks: 637511424156514590
+    m_Hash: 790612642
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -902,6 +902,80 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.vscode.git
         revision: b5ec9b38109e52b1b26597d521e4df75e042ebb9
         path: 
+    - packageId: com.unity.mobile.android-logcat@1.1.1
+      testable: 0
+      isDirectDependency: 1
+      version: 1.1.1
+      source: 1
+      resolvedPath: C:\Users\Ellie Fowler\Documents\DDNA GT Tutorial\Library\PackageCache\com.unity.mobile.android-logcat@1.1.1
+      assetPath: Packages/com.unity.mobile.android-logcat
+      name: com.unity.mobile.android-logcat
+      displayName: Android Logcat
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: "Android Logcat package adds support for displaying log messages
+        coming from Android devices in Unity Editor. Click the 'View documentation'
+        link above for more information.\n\nThe window can be accessed in Unity Editor
+        via 'Window > Analysis > Android Logcat', or simply by pressing 'Alt+6' on
+        Windows or 'Option+6' on macOS. \n\nMake sure to have Android module loaded
+        and switch to Android build target in 'Build Settings' window if the menu
+        doesn't exist."
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.1.5-preview
+        - 0.2.7-preview
+        - 1.0.0
+        - 1.0.1-preview
+        - 1.0.3-preview
+        - 1.1.0
+        - 1.1.1
+        - 1.2.0-preview
+        - 1.2.0
+        - 1.2.1
+        compatible:
+        - 0.1.5-preview
+        - 0.2.7-preview
+        - 1.0.0
+        - 1.0.1-preview
+        - 1.0.3-preview
+        - 1.1.0
+        - 1.1.1
+        - 1.2.0-preview
+        - 1.2.0
+        - 1.2.1
+        verified: 1.1.1
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - Mobile
+      - Android
+      - Logcat
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637203276680000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: git+https://github.com/Unity-Technologies/com.unity.mobile.logcat.git
+        revision: cffca6b22d6592da12fb1b4b93daa738cbca33ed
+        path: 
     - packageId: com.unity.test-framework@1.1.20
       testable: 0
       isDirectDependency: 1
@@ -949,10 +1023,12 @@ m_PackageAssets:
         - 1.1.19
         - 1.1.20
         - 1.1.22
+        - 1.1.24
         compatible:
         - 1.1.20
         - 1.1.22
-        verified: 1.1.22
+        - 1.1.24
+        verified: 1.1.24
       dependencies:
       - name: com.unity.ext.nunit
         version: 1.0.6
@@ -1216,7 +1292,9 @@ m_PackageAssets:
         - 1.5.1-pre.2
         - 1.5.1-pre.3
         - 1.5.2
+        - 1.5.4
         - 1.6.0-pre.1
+        - 1.6.0-pre.3
         compatible:
         - 1.2.6
         - 1.2.7
@@ -1266,7 +1344,9 @@ m_PackageAssets:
         - 1.5.1-pre.2
         - 1.5.1-pre.3
         - 1.5.2
+        - 1.5.4
         - 1.6.0-pre.1
+        - 1.6.0-pre.3
         verified: 1.4.6
       dependencies:
       - name: com.unity.modules.director
