@@ -29,7 +29,7 @@ DeltaDNA provides a template event on the platform to record GameTune answers. O
 
 Don't forget to save the event and publish it to your LIVE environment, so that you can start receiving the event from your players. You can publish the event by navigating to SETUP > Manage Events and clicking on the hexagon icon next to the edit button for the relevant event.
 
-![PublishEvent](Images/gametune-event-in-event-manager.png)
+![PublishEvent](Images/publish-event.png)
 
 ### Create a GameTune question and ask it
 
